@@ -20,6 +20,9 @@ docs/plans/
 # Docker Compose Environment File
 .env
 
+# Local compose data
+.local/
+
 dist
 
 # VSCode settings

@@ -1,0 +1,12 @@
+services:
+  memos:
+    build:
+      context: .
+      dockerfile: scripts/Dockerfile.compose
+    image: memos-local:test
+    container_name: memos-local
+    ports:
+      - "5230:5230"
+    volumes:
+      - ./.local/memos-data:/var/opt/memos
+    restart: unless-stopped
