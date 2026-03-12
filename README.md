@@ -70,6 +70,25 @@ docker run -d \
 
 Open `http://localhost:5230` and start writing!
 
+### Local Docker Compose
+
+To build the current source tree locally and run it with Docker Compose:
+
+```bash
+docker compose up -d --build
+```
+
+Then open `http://localhost:5230`.
+
+Useful commands:
+
+```bash
+docker compose logs -f
+docker compose down
+```
+
+Local data is stored in `./.local/memos-data`.
+
 ### Try the Live Demo
 
 Don't want to install yet? Try our [live demo](https://demo.usememos.com/) first!
